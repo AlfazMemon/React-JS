@@ -1,6 +1,5 @@
 function Second(props)
 {
-    console.log(props.image)
     return(
         <div
   style={{
