@@ -5,14 +5,14 @@ import NonFiction from './Components/NonFiction';
 
 function App() {
   
-  const [book,setBook] = useState(true)
+  const [Book,setBook] = useState(true)
 
   return (
     <div>
       <div>
         <h1>Mini Book Store</h1>
 
-        <button data-testid="toggle-btn" onClick={()=>setBook(!book)}> {book ? "Non Fiction Book" : "FictionBook"} </button>
+        <button data-testid="toggle-btn" onClick={()=>setBook(!Book)}> {Book ? "Non Fiction Book" : "FictionBook"} </button>
 
         <div data-testid="conditional-container">
             {
