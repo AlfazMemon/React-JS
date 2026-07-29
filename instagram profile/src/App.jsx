@@ -51,6 +51,7 @@ function App() {
               setvalue(!value);
             }}
           >
+
             {value ? "follow" : "following"}
           </button>
         </div>
@@ -93,6 +94,7 @@ function App() {
 
      
     </div>
+    
   )
 
 }
