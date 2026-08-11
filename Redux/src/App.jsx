@@ -3,7 +3,9 @@ import {Store} from './Store'
 
 const App = () => {
   const DisplayStore = Store
-  console.log(DisplayStore) 
+  const data = useSelector((state)=>state)
+  
+  console.log(data)
   return (
     <div>
       <h1>Hello</h1>
