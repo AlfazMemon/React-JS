@@ -1,17 +1,20 @@
-import { Decrement, Increment } from "./actiontype";
+import { Decrement, Increment } from "./Actiontype.jsx";
 
 const intialState = {
     count : 0
 }
-function Reducer(state = intialState,action) // action {type,payload}
+function Reducer(state = intialState,{type,payload}) // action {type,payload}
 {
-    switch (action.type)
+    switch (type)
     {
         case Increment :
-            return {count : state.count + 1}
-
+            return {count : state.count + payload}
+ 
         case Decrement :
-            return {count : state.count - 1}    
+            return {count : state.count - payload}    
+
+        default :
+        return state    
     }
 }
 
