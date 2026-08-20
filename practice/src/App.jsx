@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { URL } from './constanst'
+import Answer from './components/Answer'
 function App() {
 
   const [question, setQuestion] = useState('')
-  const [result, setResult] = useState(undefined)
+  const [result, setResult] = useState([])
 
   const payload = {
     contents: [
@@ -43,10 +44,10 @@ function App() {
 
       let datastring = data.candidates[0].content.parts[0].text;
       datastring = datastring.split("* ");
-      datastring = datastring.map((item)=>trim(item))
+      datastring = datastring.map((item) => item.trim())
 
       console.log(datastring)
-      setResult(data.candidates[0].content.parts[0].text);
+      setResult(datastring);
     } catch (error) {
       console.log("FETCH ERROR:", error);
     }
@@ -60,9 +61,18 @@ function App() {
 
       <div className='bg-zinc-800 h-screen col-span-4  text-white' >
 
-        <div className='container h-130 '>
+        <div className='container h-130 overflow-scroll'>
           <div className='text-white '>
-            {result}
+            <ul>
+              {
+                result.map((item, index) => (
+                  <li key={index} className='text-left p-2'>
+                    <Answer ans={item} index={index}/>
+                  </li>
+                ))
+              }
+            </ul>
+
           </div>
 
         </div>
