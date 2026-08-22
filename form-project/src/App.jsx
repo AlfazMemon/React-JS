@@ -1,78 +1,108 @@
 import { useState } from "react"
 import "./App.css"
-function App(){
+function App() {
 
   const InitialState = {
-    name : "",
-    email : "",
-    password : ""
+    name: "",
+    email: "",
+    password: "",
+    gender: ""
 
   }
 
-  const [data,setData] = useState(InitialState)
+  const [data, setData] = useState(InitialState)
 
-  function handleChange(e){
+  function handleChange(e) {
 
-    setData({...data,[e.target.name]:e.target.value})
+    setData({ ...data, [e.target.name]: e.target.value })
 
   }
 
   function handleSubmit(e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  console.log(data);
+    console.log(data);
 
-  localStorage.setItem("Data", JSON.stringify(data));
+    localStorage.setItem("Data", JSON.stringify(data));
 
-}
+  }
 
-  
-  return(
+
+  return (
     <>
-    <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
 
-  <h2>Register</h2>
+        <h2>Register</h2>
 
-  <div className="input-group">
-    <label>Name</label>
-    <input
-      type="text"
-      placeholder="Enter your Name"
-      name="name"
-      value={data.name}
-      onChange={handleChange}
-      required
-    />
-  </div>
+        <div className="input-group">
+          <label>Name</label>
+          <input
+            type="text"
+            placeholder="Enter your Name"
+            name="name"
+            value={data.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
 
-  <div className="input-group">
-    <label>Email</label>
-    <input
-      type="email"
-      placeholder="Enter your Email"
-      name="email"
-      value={data.email}
-      onChange={handleChange}
-      required
-    />
-  </div>
+        <div className="input-group">
+          <label>Gender</label>
 
-  <div className="input-group">
-    <label>Password</label>
-    <input
-      type="password"
-      placeholder="Enter your Password"
-      name="password"
-      value={data.password}
-      onChange={handleChange}
-      required
-      minLength="6"
-    />
-  </div>
+          <div className="gender-options">
 
-  <input type="submit" value="Register" />
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="Male"
+                checked={data.gender === "Male"}
+                onChange={handleChange}
+              />
+              Male
+            </label>
 
-</form>
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="Female"
+                checked={data.gender === "Female"}
+                onChange={handleChange}
+              />
+              Female
+            </label>
+          </div>
+        </div>
+
+        <div className="input-group">
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            name="email"
+            value={data.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="input-group">
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Enter your Password"
+            name="password"
+            value={data.password}
+            onChange={handleChange}
+            required
+            minLength="6"
+          />
+        </div>
+
+        <input type="submit" value="Register" />
+
+      </form>
     </>
   )
 }
