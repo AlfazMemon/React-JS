@@ -1,44 +1,71 @@
 import { useEffect, useState } from "react";
+import "./App.css";
 
-function App(){
+function App() {
 
-  const [value,setvalue] = useState([])
-  const[page,setPage] = useState(1)
+  const [value, setValue] = useState([]);
+  const [page, setPage] = useState(1);
 
-  function FetchData(){
-
-  fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=5`)
-  .then((res)=>res.json())
-  .then((data)=>setvalue(data))
-  .catch((err)=>console.log(err))
-  
+  function FetchData() {
+    fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=5`)
+      .then((res) => res.json())
+      .then((data) => setValue(data))
+      .catch((err) => console.log(err));
   }
 
-  useEffect(()=>{
-
+  useEffect(() => {
     FetchData();
-    
-  },[page])
+  }, [page]);
 
-  
   return (
-    <div>
-      {
-        value.map((el)=>
+    <div className="container">
 
-        <div key = {el.id} style={{border:' 1px solid black', marginBottom: '5px', textAlign :'center'}}>
-          <i>{el.id}</i>
-          <p>{el.title}</p>
-          <p>{el.body}</p>
-          
-        </div>)
-        
-      }
-      <button onClick={()=>setPage(page-1)}>prev</button>
-      {page}
-      <button onClick={()=>setPage(page+1)}>next</button>
+      <div className="header">
+        <h1>★ POST DATABASE ★</h1>
+        <p>Classic Web Data Explorer</p>
+      </div>
+
+      {value.map((el) => (
+        <div className="post" key={el.id}>
+
+          <span className="post-id">
+            POST #{el.id}
+          </span>
+
+          <p className="post-title">
+            {el.title}
+          </p>
+
+          <p className="post-body">
+            {el.body}
+          </p>
+
+        </div>
+      ))}
+
+      <div className="pagination">
+
+        <button
+          disabled={page === 1}
+          onClick={() => setPage(page - 1)}
+        >
+          ◀ PREV
+        </button>
+
+        <span className="page-number">
+          PAGE {page}
+        </span>
+
+        <button
+          onClick={() => setPage(page + 1)}
+        >
+          NEXT ▶
+        </button>
+
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

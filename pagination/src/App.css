@@ -1,0 +1,137 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f3efe7;
+  color: #29251f;
+}
+
+/* Main */
+.container {
+  width: 900px;
+  max-width: 92%;
+  margin: 50px auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #24201b;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #81786c;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Posts */
+.post {
+  background: #fffdf9;
+  border: 1px solid #d8d0c3;
+  padding: 25px 28px;
+  margin-bottom: 18px;
+  border-radius: 3px;
+
+  box-shadow: 0 4px 12px rgba(50, 40, 30, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(50, 40, 30, 0.13);
+}
+
+/* ID */
+.post-id {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #8b5e34;
+}
+
+/* Title */
+.post-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin: 10px 0 12px;
+  color: #302a23;
+}
+
+/* Body */
+.post-body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #625a50;
+  margin: 0;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 30px;
+  padding: 18px;
+
+  border-top: 1px solid #d8d0c3;
+}
+
+.pagination button {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: bold;
+
+  padding: 9px 20px;
+
+  background: #302a23;
+  color: #fffdf9;
+
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #8b5e34;
+}
+
+.pagination button:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.pagination button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.page-number {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5c5145;
+
+  min-width: 70px;
+  text-align: center;
+}
