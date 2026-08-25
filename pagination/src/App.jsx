@@ -7,14 +7,18 @@ function App() {
   const [page, setPage] = useState(1);
 
   function FetchData() {
+
     fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=5`)
       .then((res) => res.json())
       .then((data) => setValue(data))
       .catch((err) => console.log(err));
+
   }
 
   useEffect(() => {
+
     FetchData();
+
   }, [page]);
 
   return (
@@ -66,6 +70,7 @@ function App() {
 
     </div>
   );
+  
 }
 
 export default App;
