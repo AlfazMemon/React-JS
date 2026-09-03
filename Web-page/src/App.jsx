@@ -1,4 +1,5 @@
 import './App.css'
+import Slider from './component/slider'
 const App = () => {
   return (
     <div >
@@ -16,6 +17,8 @@ const App = () => {
         <button>Sign In</button>
       </div>
      </nav>
+
+     <Slider/>
 
     </div>
   )
