@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding: 10px;
+  align-items: center;
+  background-color: grey;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.link{
+  display: flex;
+  gap: 15px;
+}
+
+.link a{
+  text-decoration: none;
+  color:  black;
+
+}
+
+.icons{
+  display: flex;
+}
+
+button{
+  padding:  7px 15px;
+  border-radius: 25px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
