@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alfaz",
+      "email": "alfaz@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Aman",
+      "email": "aman@gmail.com"
+    },
+    {
+      "name": "Alfaz Memon farukbhai",
+      "email": "memonalfaz749@gmail.com",
+      "phone": "7041701707",
+      "id": "CMyjcID31-A"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
