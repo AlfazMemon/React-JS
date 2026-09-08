@@ -15,6 +15,12 @@
       "email": "memonalfaz749@gmail.com",
       "phone": "7041701707",
       "id": "CMyjcID31-A"
+    },
+    {
+      "name": "me",
+      "email": "me@gmail.com",
+      "phone": "123-123-1234",
+      "id": "UiewbwV5pV4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

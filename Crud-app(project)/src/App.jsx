@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-// import './App.css'
+import './App.css'
 
 
 const App = () => {
@@ -138,6 +138,8 @@ function EditUser(user){
         <h3>{user.name}</h3>
 
         <p>{user.email}</p>
+
+        <p>{user.phone}</p>
 
         <button onClick={()=>EditUser(user)}>Edit</button>
 
