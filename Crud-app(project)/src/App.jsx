@@ -43,6 +43,12 @@ const App = () => {
 
   e.preventDefault();
 
+  if(formData.name === "" || formData.email === "" || formData.phone === "")
+    {
+      alert("Please Fill all Fields")
+      return;
+  }
+
   if(EditId === null){
 
   fetch("http://localhost:3000/users", {
@@ -126,28 +132,12 @@ function EditUser(user){
   }
 
   return (
-    <div>
+    <div className="container">
 
   
       
-    <h1>Users</h1>
 
-    {users.map((user)=>(
-      <div key={user.id}>
-
-        <h3>{user.name}</h3>
-
-        <p>{user.email}</p>
-
-        <p>{user.phone}</p>
-
-        <button onClick={()=>EditUser(user)}>Edit</button>
-
-        <button onClick={()=>DeleteUser(user.id)}>Delete</button>
-
-      </div>
-    )
-    )}
+   
 
     <form action="" onSubmit={handleSubmit}>
       <input type="text"
@@ -172,6 +162,26 @@ function EditUser(user){
         {EditId === null ? "Add User" : "Update User"}
       </button>
     </form>
+
+
+    <div className="users">
+     {users.map((user)=>(
+      <div className='user-card' key={user.id}>
+
+        <h3>Name :{user.name}</h3>
+
+        <p>Email :{user.email}</p>
+
+        <p>Phone :{user.phone}</p>
+
+        <button className='edit-btn' onClick={()=>EditUser(user)}>Edit</button>
+
+        <button className='delete-btn' onClick={()=>DeleteUser(user.id)}>Delete</button>
+
+      </div>
+    )
+    )}
+   </div>
 
 
     </div>
