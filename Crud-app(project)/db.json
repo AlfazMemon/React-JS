@@ -2,26 +2,57 @@
   "users": [
     {
       "id": "1",
-      "name": "Alfaz",
-      "email": "alfaz@gmail.com"
+      "name": "Alfaz Memon",
+      "email": "alfaz@gmail.com",
+      "phone": "7041701707",
+      "gender": "Male",
+      "dob": "2005-06-15",
+      "password": "Alfaz@123"
+    },
+    {
+      "id": "2",
+      "name": "Rahul Patel",
+      "email": "rahul@gmail.com",
+      "phone": "9876543210",
+      "gender": "Male",
+      "dob": "2004-11-22",
+      "password": "Rahul@123"
     },
     {
       "id": "3",
-      "name": "Aman",
-      "email": "aman@gmail.com"
+      "name": "Priya Shah",
+      "email": "priya@gmail.com",
+      "phone": "9123456780",
+      "gender": "Female",
+      "dob": "2005-03-18",
+      "password": "Priya@123"
     },
     {
-      "name": "Alfaz Memon farukbhai",
-      "email": "memonalfaz749@gmail.com",
-      "phone": "7041701707",
-      "id": "CMyjcID31-A"
+      "id": "4",
+      "name": "Aman Joshi",
+      "email": "aman@gmail.com",
+      "phone": "9012345678",
+      "gender": "Male",
+      "dob": "2003-09-10",
+      "password": "Aman@123"
     },
     {
-      "name": "me",
-      "email": "me@gmail.com",
-      "phone": "123-123-1234",
-      "id": "UiewbwV5pV4"
+      "id": "5",
+      "name": "Neha Mehta",
+      "email": "neha@gmail.com",
+      "phone": "9345678901",
+      "gender": "Female",
+      "dob": "2004-07-25",
+      "password": "Neha@123"
+    },
+    {
+      "id": "6",
+      "name": "Arjun Desai",
+      "email": "arjun@gmail.com",
+      "phone": "8765432109",
+      "gender": "Male",
+      "dob": "2005-01-30",
+      "password": "Arjun@123"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
