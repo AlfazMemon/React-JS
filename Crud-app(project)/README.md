@@ -1,16 +1,44 @@
-# React + Vite
+# CRUD Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple CRUD (Create, Read, Update, Delete) application built using React.js.
 
-Currently, two official plugins are available:
+## 🎥 Project Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Watch the complete project demonstration:
 
-## React Compiler
+[▶️ Watch CRUD Application Demo](https://drive.google.com/file/d/1fTdRzmh2Il_I7KqY5sriZ2tWQ8E79R9G/view?usp=drive_link)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ➕ Add new users
+- 👀 View user data
+- ✏️ Edit user information
+- 🗑️ Delete users
+- 📱 Responsive design
+- ✅ Form validation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- JSON Server
+- React Hooks (`useState`, `useEffect`)
+
+## 📋 User Fields
+
+The application contains the following fields:
+
+- Name
+- Email
+- Phone
+- Gender
+- Date of Birth
+
+## ⚙️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_LINK
