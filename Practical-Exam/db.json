@@ -1,0 +1,102 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Rahul Sharma",
+      "phone": "9876543210",
+      "email": "rahul@gmail.com",
+      "age": 20,
+      "class": "BCA",
+      "grade": "A"
+    },
+    {
+      "id": "2",
+      "name": "Priya Patel",
+      "phone": "9876501234",
+      "email": "priya@gmail.com",
+      "age": 21,
+      "class": "BCA",
+      "grade": "A+"
+    },
+    {
+      "id": "3",
+      "name": "Aman Khan",
+      "phone": "9876543211",
+      "email": "aman@gmail.com",
+      "age": 19,
+      "class": "BCA",
+      "grade": "B+"
+    },
+    {
+      "id": "4",
+      "name": "Neha Shah",
+      "phone": "9876543212",
+      "email": "neha@gmail.com",
+      "age": 20,
+      "class": "BCA",
+      "grade": "A"
+    },
+    {
+      "id": "5",
+      "name": "Arjun Mehta",
+      "phone": "9876543213",
+      "email": "arjun@gmail.com",
+      "age": 22,
+      "class": "BCA",
+      "grade": "B"
+    },
+    {
+      "id": "6",
+      "name": "Sneha Joshi",
+      "phone": "9876543214",
+      "email": "sneha@gmail.com",
+      "age": 19,
+      "class": "BCA",
+      "grade": "A+"
+    },
+    {
+      "id": "7",
+      "name": "Vivek Desai",
+      "phone": "9876543215",
+      "email": "vivek@gmail.com",
+      "age": 21,
+      "class": "BCA",
+      "grade": "B+"
+    },
+    {
+      "id": "8",
+      "name": "Anjali Verma",
+      "phone": "9876543216",
+      "email": "anjali@gmail.com",
+      "age": 20,
+      "class": "BCA",
+      "grade": "A"
+    },
+    {
+      "id": "9",
+      "name": "Karan Patel",
+      "phone": "9876543217",
+      "email": "karan@gmail.com",
+      "age": 22,
+      "class": "BCA",
+      "grade": "B"
+    },
+    {
+      "id": "10",
+      "name": "Riya Mehta",
+      "phone": "9876543218",
+      "email": "riya@gmail.com",
+      "age": 19,
+      "class": "BCA",
+      "grade": "A+"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

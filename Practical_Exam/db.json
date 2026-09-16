@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Rahul Sharma",
+      "phone": "9876543210",
+      "email": "rahul@gmail.com",
+      "age": 20,
+      "class": "BCA",
+      "grade": "A",
+      "image": "https://i.pravatar.cc/150?img=12"
+    },
+    {
+      "id": "2",
+      "name": "Priya Patel",
+      "phone": "9876501234",
+      "email": "priya@gmail.com",
+      "age": 21,
+      "class": "BCA",
+      "grade": "A+",
+      "image": "https://i.pravatar.cc/150?img=47"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
