@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card{
+  background-color: #222;
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+}
+
+.card h1{
+  color: white;
+  padding: 10px 0px;
+}
+
+.card h2{
+  color: white;
+}
+
+.card p{
+  font-size: 18px;
+  padding: 10px 0px;
+}
